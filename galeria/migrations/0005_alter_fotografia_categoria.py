@@ -13,6 +13,15 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='fotografia',
             name='categoria',
-            field=models.CharField(choices=[('Nebulosa', 'Nebulosa'), ('Estrela', 'Estrela'), ('GALAXIA', 'Galaxia'), ('PLANETA', 'Planeta')], default='', max_length=100),
+            field=models.CharField(
+                choices=[
+                    ('Nebulosa', 'Nebulosa'),
+                    ('Estrela', 'Estrela'),
+                    ('GALAXIA', 'Galaxia'),
+                    ('PLANETA', 'Planeta'),
+                ],
+                default='',
+                max_length=100,
+            ),
         ),
     ]
